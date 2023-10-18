@@ -16,10 +16,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 255, 103, 222)),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 255, 103, 222)),
         useMaterial3: true,
+        scaffoldBackgroundColor: const Color.fromARGB(255, 255, 243, 250),
       ),
-      home: const MyHomePage(title: 'Climage'),
+      home: const MyHomePage(title: 'Clicmage'),
     );
   }
 }
@@ -67,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ) : ImageComponents(index: stock),
       floatingActionButton: FloatingActionButton(
         onPressed: changeState,
-        backgroundColor: const Color.fromARGB(255, 250, 255, 115),
+        backgroundColor: const Color.fromARGB(255, 251, 255, 145),
         tooltip: 'Increment',
         child: const Icon(Icons.image),
       ),

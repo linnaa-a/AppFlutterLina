@@ -13,6 +13,7 @@ class ClavierComponent extends StatefulWidget {
 class _ClavierComponentState extends State<ClavierComponent> {
   @override
   Widget build(BuildContext context) {
+    
     return Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
@@ -20,31 +21,51 @@ class _ClavierComponentState extends State<ClavierComponent> {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                TextButton(onPressed: () => widget.onPressed('1'), child: Text('1')),
-                TextButton(onPressed: () => widget.onPressed('2'), child: Text('2')),
-                TextButton(onPressed: () => widget.onPressed('3'), child: Text('3')),
+                TextButton(style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(126, 234, 255, 180)),
+                      onPressed: () => widget.onPressed('1'), child: const Text('1')),
+                TextButton(style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(126, 234, 255, 180)),
+                      onPressed: () => widget.onPressed('2'), child: const Text('2')),
+                TextButton(style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(126, 234, 255, 180)),
+                      onPressed: () => widget.onPressed('3'), child: const Text('3')),
               ]),
           Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                TextButton(onPressed: () => widget.onPressed('4'), child: Text('4')),
-                TextButton(onPressed: () => widget.onPressed('5'), child: Text('5')),
-                TextButton(onPressed: () => widget.onPressed('6'), child: Text('6')),
+                TextButton(style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(126, 234, 255, 180)),
+                      onPressed: () => widget.onPressed('4'), child: const Text('4')),
+                TextButton(style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(126, 234, 255, 180)),
+                      onPressed: () => widget.onPressed('5'), child: const Text('5')),
+                TextButton(style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(126, 234, 255, 180)),
+                      onPressed: () => widget.onPressed('6'), child: const Text('6')),
               ]),
           Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                TextButton(onPressed: () => widget.onPressed('7'), child: Text('7')),
-                TextButton(onPressed: () => widget.onPressed('8'), child: Text('8')),
-                TextButton(onPressed: () => widget.onPressed('9'), child: Text('9')),
+                TextButton(style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(126, 234, 255, 180)),
+                      onPressed: () => widget.onPressed('7'), child: const Text('7')),
+                TextButton(style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(126, 234, 255, 180)),
+                      onPressed: () => widget.onPressed('8'), child: const Text('8')),
+                TextButton(style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(126, 234, 255, 180)),
+                      onPressed: () => widget.onPressed('9'), child: const Text('9')),
               ]),
           Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                TextButton(onPressed: () => widget.onPressed('0'), child: Text('0')),
+                TextButton(style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(126, 234, 255, 180)),
+                      onPressed: () => widget.onPressed('0'), child: const Text('0')),
               ])
         ]);
   }
